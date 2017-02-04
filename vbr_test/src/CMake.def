@@ -1,0 +1,18 @@
+# Debug or Release
+set(CMAKE_BUILD_TYPE "Release")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
+
+# we need more warnings
+add_definitions(-W -Wall)
+
+# Maj.min project version
+add_definitions(-DVBR_VER_MAJ=1 -DVBR_VER_MIN=0)
+
+# default server port 
+add_definitions(-DVBR_DEF_SERVER_PORT=1280)
+
+# default server address 
+add_definitions(-DVBR_DEF_SERVER_ADDR="127.0.0.1")
+
+# message buffer size
+add_definitions(-DVBR_MSG_BUFF_SIZE=1024)
